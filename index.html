@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Web App</title>
+    <script
+      src="https://kit.fontawesome.com/8cb4537a60.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <nav class="navbar">
+          <div class="webName">
+            <span><h1>Weather.info</h1></span>
+          </div>
+
+          <div class="weblogo">
+            <i class="fa-solid fa-cloud-sun-rain"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="mainBody">
+        <div class="img">
+          <div class="search">
+            <input
+              type="text"
+              name="searchbar"
+              id="searchbar"
+              placeholder="Enter city name.."
+            />
+            <input
+              type="button"
+              value="Find"
+              id="findbtn"
+              onclick="getData()"
+            />
+          </div>
+        </div>
+        <div class="weatherInfo">
+          <div class="date_day">
+            <span class="day">Monday</span>
+            <span class="date">6 oct</span>
+          </div>
+          <div class="city">
+            <p>New York</p>
+          </div>
+          <div class="temp">
+            <h1>23 <span>°C</span></h1>
+            <span><i id="logo" class="fa-solid fa-cloud-bolt"></i></span>
+          </div>
+          <div class="humidity">
+            <span>40%</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

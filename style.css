@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background-color: rgb(17, 17, 53);
+  height: 4rem;
+  color: white;
+}
+.webName {
+  width: fit-content;
+  position: relative;
+  top: 18px;
+  left: 75px;
+}
+body {
+  background-color: rgb(25, 25, 50);
+}
+#img1 {
+  opacity: 0.7;
+}
+.img {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.search {
+  background-image: url("WheatherAppimage.jpg");
+  height: 200px;
+}
+#searchbar {
+  width: 39vw;
+  height: 42px;
+  background-color: rgb(25, 25, 50);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  position: relative;
+  top: 35%;
+  padding-left: 18px;
+}
+#findbtn {
+  position: relative;
+  top: 35%;
+  padding: 11px 19px;
+  border: none;
+  border-radius: 50px;
+  background-color: #03b6ff;
+  color: white;
+}
+.weatherInfo {
+  color: white;
+  background-color: rgba(36, 36, 74, 0.763);
+  width: 21rem;
+  position: relative;
+  height: 17rem;
+  margin-top: 31px;
+  left: 37%;
+  border-radius: 8px;
+}
+.date_day {
+  background-color: rgba(51, 51, 81, 0.77);
+  padding: 9px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.day {
+  display: flex;
+  position: relative;
+  top: 9px;
+}
+.date {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  bottom: 10px;
+}
+.city {
+  padding: 29px 10px;
+}
+.temp {
+  padding: 1px 10px;
+  font-size: 28px;
+  display: flex;
+}
+.humidity {
+  padding: 10px;
+}
+#logo {
+  color: #03b6ff;
+  font-size: 64px;
+  padding-left: 4rem;
+}
+.humidity {
+  padding: 0px 10px;
+}
+.weblogo {
+  color: #03b6ff;
+  width: fit-content;
+  font-size: 33px;
+  position: relative;
+  left: 29px;
+  bottom: 15px;
+}
+#color {
+  color: red;
+  display: flex;
+  text-align: center;
+  padding-top: 2rem;
+}
+#humiditylogo {
+  color: #03b6ff;
+}
+#logocloud {
+  position: relative;
+  bottom: 19px;
+}
+#findbtn:hover {
+  background-color: #43c7fb;
+  cursor: pointer;
+  border: 2px solid rgb(57, 57, 247);
+}
