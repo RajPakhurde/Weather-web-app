@@ -1,14 +1,13 @@
 getData();
 console.log(new Date().getMonth());
 var days = [
-  "000",
+  "Sunday",
   "Monday",
   "Tuesday",
   "Wednesday",
   "Thusday",
   "Friday",
   "Saturday",
-  "Sunday",
 ];
 var todayDate = new Date().getDate();
 var months = [

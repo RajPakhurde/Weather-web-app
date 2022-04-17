@@ -120,3 +120,14 @@ body {
   cursor: pointer;
   border: 2px solid rgb(57, 57, 247);
 }
+@media only screen and (max-width: 800px) {
+  .weatherInfo {
+    left: 32%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .weatherInfo {
+    position: relative;
+    left: 10px;
+  }
+}
