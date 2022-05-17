@@ -1,4 +1,5 @@
 getData();
+
 console.log(new Date().getMonth());
 var days = [
   "Sunday",
@@ -78,3 +79,31 @@ function getData() {
 
   document.querySelector("#searchbar").value = "";
 }
+
+const cityName = ["Delhi", "Pune", "Chennai", "Kolkata", "london"];
+
+function allReadyData() {
+  for (let i = 0; i < cityName.length; i++) {
+    var url2 =
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
+      cityName[i] +
+      "&appid=96481dea7f710393572613a0c1ceefbd&units=metric";
+
+    fetch(url2)
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        var list = document.querySelector(".list");
+        list.insertAdjacentHTML(
+          "beforeend",
+          ` <div class="list">
+        <p class="listLocation"><i id="loca" class="fa-solid fa-location-dot"></i></i>${data.name}-${data.sys.country} | ${data.main.temp}°C <i id="humiditylogo" class="fa-solid fa-umbrella"></i>${data.main.humidity}% | ${data.weather[0].main} | P = ${data.main.pressure} pascal</p>
+      </div>`
+        );
+      });
+    console.log(i);
+  }
+}
+
+allReadyData();

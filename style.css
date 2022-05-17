@@ -31,7 +31,6 @@ body {
   background-image: url("Weather-web-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 10;
 }
 .search {
   /* background-image: url("WheatherAppimage.jpg"); */
@@ -63,9 +62,9 @@ body {
 }
 .all_info {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   margin-right: 3rem;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 .weatherInfo {
   color: white;
@@ -82,6 +81,7 @@ body {
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
   font-family: "Poppins", sans-serif;
+  color: rgb(0, 34, 116, 0.8);
 }
 .day {
   display: flex;
@@ -107,6 +107,7 @@ body {
   padding: 1px 10px;
   font-size: 28px;
   display: flex;
+  color: rgb(0, 34, 116, 0.8);
 }
 .humidity {
   padding: 10px;
@@ -132,8 +133,10 @@ body {
 #color {
   color: red;
   display: flex;
-  text-align: center;
-  padding-top: 2rem;
+
+  padding-top: 3rem;
+  font-family: "Teko", sans-serif;
+  justify-content: center;
 }
 #humiditylogo {
   color: #03b6ff;
@@ -147,9 +150,44 @@ body {
   cursor: pointer;
   border: 2px solid rgb(57, 57, 247);
 }
+::placeholder {
+  color: #fccd04;
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+}
+.listLocation {
+  background-color: rgb(0, 34, 116, 0.8);
+  color: #fccd04;
+  padding: 14px;
+  border-radius: 4px;
+  word-spacing: 13px;
+  margin: 10px;
+  margin-left: 9rem;
+  box-shadow: 5px 5px 10px gray;
+}
+@media only screen and (max-width: 1080px) {
+  .listLocation {
+    margin-left: 2rem;
+  }
+  .all_info {
+    justify-content: center;
+  }
+  body {
+    background-color: 2000px;
+  }
+}
 @media only screen and (max-width: 800px) {
   .weatherInfo {
     left: 32%;
+  }
+  .listLocation {
+    margin-left: 2rem;
+  }
+  .all_info {
+    justify-content: center;
+  }
+  body {
+    background-size: 1700px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -157,9 +195,13 @@ body {
     position: relative;
     left: 10px;
   }
-}
-::placeholder {
-  color: #fccd04;
-  font-family: "Teko", sans-serif;
-  font-size: 20px;
+  .all_info {
+    justify-content: center;
+  }
+  .listLocation {
+    margin-left: 20px;
+  }
+  body {
+    background-size: 1400px;
+  }
 }
