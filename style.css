@@ -1,20 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Teko&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 .navbar {
-  background-color: rgb(17, 17, 53);
   height: 4rem;
-  color: white;
+  color: skyblue;
 }
 .webName {
   width: fit-content;
   position: relative;
   top: 18px;
   left: 75px;
+  font-weight: 700;
 }
-body {
-  background-color: rgb(25, 25, 50);
+#info {
+  color: lightgreen;
 }
 #img1 {
   opacity: 0.7;
@@ -23,60 +24,84 @@ body {
   position: relative;
   text-align: center;
   color: white;
+  /* background-image: linear-gradient(to right, #64a1ff, #88fcfe); */
+}
+
+body {
+  background-image: url("Weather-web-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
 }
 .search {
-  background-image: url("WheatherAppimage.jpg");
+  /* background-image: url("WheatherAppimage.jpg"); */
+
   height: 200px;
 }
 #searchbar {
   width: 39vw;
   height: 42px;
-  background-color: rgb(25, 25, 50);
+  background-image: linear-gradient(to right, #64a1ff, #88fcfe);
   border: none;
   border-radius: 50px;
   color: white;
   position: relative;
-  top: 35%;
+  top: 53%;
   padding-left: 18px;
+  opacity: 50%;
+  box-shadow: 5px 5px 10px gray;
 }
 #findbtn {
   position: relative;
-  top: 35%;
+  top: 53%;
   padding: 11px 19px;
   border: none;
   border-radius: 50px;
-  background-color: #03b6ff;
+  background-image: linear-gradient(to right, #64a1ff, #88fcfe);
   color: white;
+  box-shadow: 5px 5px 10px gray;
+}
+.all_info {
+  display: flex;
+  justify-content: end;
+  margin-right: 3rem;
+  flex-wrap: wrap;
 }
 .weatherInfo {
   color: white;
-  background-color: rgba(36, 36, 74, 0.763);
+  background-color: rgb(89, 171, 234, 0.3);
   width: 21rem;
-  position: relative;
   height: 17rem;
-  margin-top: 31px;
-  left: 37%;
   border-radius: 8px;
+  box-shadow: 2px 4px 10px 4px gray;
+  margin-bottom: 8px;
 }
 .date_day {
-  background-color: rgba(51, 51, 81, 0.77);
+  background-color: rgb(86, 128, 233, 0.3);
   padding: 9px;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
+  font-family: "Poppins", sans-serif;
 }
 .day {
   display: flex;
   position: relative;
   top: 9px;
+  font-family: "Poppins", sans-serif;
 }
 .date {
   display: flex;
   justify-content: right;
   position: relative;
   bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+#loca {
+  color: rgb(89, 171, 234);
 }
 .city {
-  padding: 29px 10px;
+  padding: 20px 10px;
+  font-family: "Poppins", sans-serif;
 }
 .temp {
   padding: 1px 10px;
@@ -93,6 +118,8 @@ body {
 }
 .humidity {
   padding: 0px 10px;
+  font-family: "Poppins", sans-serif;
+  color: #8860d0;
 }
 .weblogo {
   color: #03b6ff;
@@ -130,4 +157,9 @@ body {
     position: relative;
     left: 10px;
   }
+}
+::placeholder {
+  color: #fccd04;
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
 }

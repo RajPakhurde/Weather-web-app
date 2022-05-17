@@ -56,7 +56,7 @@ function getData() {
         <span class="date">${todayDate} ${month}</span>
       </div>
       <div class="city">
-        <p>${data.name} - ${data.sys.country} </p>
+        <p><i id="loca" class="fa-solid fa-location-dot"></i> ${data.name} - ${data.sys.country} </p>
       </div>
       <div class="temp">
         <h1>${data.main.temp}<span>°C</span></h1>
