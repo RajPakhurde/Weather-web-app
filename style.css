@@ -192,8 +192,7 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .weatherInfo {
-    position: relative;
-    left: 10px;
+    margin-left: 3rem;
   }
   .all_info {
     justify-content: center;
@@ -202,6 +201,26 @@ body {
     margin-left: 20px;
   }
   body {
-    background-size: 1400px;
+    background-size: 1350px;
+  }
+  #searchbar {
+    width: 12rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .weatherInfo {
+    margin-left: 3rem;
+  }
+  .all_info {
+    justify-content: center;
+  }
+  .listLocation {
+    margin-left: 20px;
+  }
+  body {
+    background-size: 1350px;
+  }
+  #searchbar {
+    width: 12rem;
   }
 }
