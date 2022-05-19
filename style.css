@@ -235,4 +235,11 @@ body {
   #searchbar {
     width: 12rem;
   }
+  .digital-clock {
+    font-size: 1.5rem;
+  }
+  .list {
+    width: 340px;
+    padding: 0px 18px;
+  }
 }
